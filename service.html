@@ -14,7 +14,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -56,7 +56,8 @@
         </div>
 
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0 d-flex align-items-center">
+                <img src="img/logo.jpg" alt="GLO logo" class="navbar-logo me-2">
                 <h1 class="fw-bold text-primary m-0">Grace of Light for Orphans<span class="text-white"></span></h1>
             </a>
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -68,26 +69,17 @@
                     <a href="about.html" class="nav-item nav-link">About</a>
                     <a href="service.html" class="nav-item nav-link active">Services</a>
                     <a href="team.html" class="nav-item nav-link">Our Team</a>
-                    <!--<div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="service.html" class="dropdown-item">Service</a>
-                            <a href="donate.html" class="dropdown-item">Donate</a>
-                            <a href="team.html" class="dropdown-item">Our Team</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="404.html" class="dropdown-item">404 Page</a>
-                        </div>
-                    </div>-->
+                    <a href="blog.html" class="nav-item nav-link">Blog</a>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <!--<div class="d-none d-lg-flex ms-2">
-                    <a class="btn btn-outline-primary py-2 px-3" href="">
+                <div class="d-none d-lg-flex ms-3">
+                    <a class="btn btn-donate py-2 px-4" href="https://pay.dzaleka.com/campaigns/be-their-light-31629a" target="_blank" rel="noopener">
                         Donate Now
                         <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
-                            <i class="fa fa-arrow-right"></i>
+                            <i class="fa fa-heart"></i>
                         </div>
                     </a>
-                </div>-->
+                </div>
             </div>
         </nav>
     </div>
@@ -121,125 +113,134 @@
             <div class="row g-4 justify-content-center">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-                        <img class="img-fluid mb-4" src="img/education.png" alt="">
+                        <div class="service-icon mb-4"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
                         <h4 class="mb-3">Education and Skills Development</h4>
                         
-                        <p class="mb-4">
-                            GLO aims to ensure that every orphan and vulnerable child has access to quality and inclusive education
-                             as a pathway to breaking the cycle of poverty. This includes the provision of school fees, uniforms, and learning 
-                             materials for disadvantaged children, while also working with schools and communities to create safe and 
-                             child-friendly learning environments. Beyond formal education, GLO will integrate life skills training, 
-                             vocational programs, digital literacy, and mentorship opportunities to prepare children and youth for 
-                             self-reliance. By 2029, the organization envisions producing a generation of empowered young people who 
-                             are not only literate but also skilled, confident, and ready to contribute meaningfully to Malawi’s 
-                             socio-economic development
-                        </p>
+                        <p class="mb-4">GLO aims to ensure that every orphan and vulnerable child has access to quality and inclusive education.</p>
 
-                        <!--<a class="btn btn-outline-primary px-3" href="">
-                            Learn More
+                        <div class="collapse service-more" id="service-more-1">
+                            <p>
+                                This includes the provision of school fees, uniforms, and learning materials for disadvantaged children, while also
+                                working with schools and communities to create safe and child-friendly learning environments. Beyond formal education,
+                                GLO will integrate life skills training, vocational programs, digital literacy, and mentorship opportunities to prepare
+                                children and youth for self-reliance. By 2029, the organization envisions producing a generation of empowered young people
+                                who are not only literate but also skilled, confident, and ready to contribute meaningfully to Malawi’s socio-economic
+                                development.
+                            </p>
+                        </div>
+
+                        <a class="btn btn-outline-primary px-3 mt-2" data-bs-toggle="collapse" href="#service-more-1" role="button" aria-expanded="false" aria-controls="service-more-1">
+                            Read More
                             <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
                                 <i class="fa fa-arrow-right"></i>
                             </div>
-                        </a>-->
+                        </a>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-                        <img class="img-fluid mb-4" src="img/health.png" alt="">
+                        <div class="service-icon mb-4"><i class="fa fa-stethoscope" aria-hidden="true"></i></div>
                         <h4 class="mb-3">Health and Nutrition Support</h4>
 
-                        <p class="mb-4">
-                            Recognizing that good health is a prerequisite for learning and growth, GLO will strengthen support systems to 
-                            ensure orphans and vulnerable children receive adequate nutrition, preventive health care, and psychosocial support.
-                            The organization will collaborate with local health centers to provide regular medical check-ups, vaccinations, 
-                            and HIV/AIDS support for affected children. School feeding programs will be scaled up to combat malnutrition and
-                             improve school attendance. GLO will also prioritize mental health and psychosocial care, offering counseling for 
-                             children who have experienced trauma, neglect, or abuse. By 2029, children under GLO’s care will not only be 
-                             healthier but also resilient, able to pursue education and life opportunities without being hindered 
-                             by preventable health challenges
-                        </p>
+                        <p class="mb-4">Recognizing that good health is a prerequisite for learning and growth, GLO will strengthen support systems to ensure children receive adequate nutrition and preventive care.</p>
 
-                        <!--<a class="btn btn-outline-primary px-3" href="">
-                            Learn More
+                        <div class="collapse service-more" id="service-more-2">
+                            <p>
+                                The organization will collaborate with local health centers to provide regular medical check-ups, vaccinations, and HIV/AIDS
+                                support for affected children. School feeding programs will be scaled up to combat malnutrition and improve school attendance.
+                                GLO will also prioritize mental health and psychosocial care, offering counseling for children who have experienced trauma,
+                                neglect, or abuse. By 2029, children under GLO’s care will not only be healthier but also resilient, able to pursue education
+                                and life opportunities without being hindered by preventable health challenges.
+                            </p>
+                        </div>
+
+                        <a class="btn btn-outline-primary px-3 mt-2" data-bs-toggle="collapse" href="#service-more-2" role="button" aria-expanded="false" aria-controls="service-more-2">
+                            Read More
                             <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
                                 <i class="fa fa-arrow-right"></i>
                             </div>
-                        </a>-->
+                        </a>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-                        <img class="img-fluid mb-4" src="img/child.jpg" alt="">
+                        <div class="service-icon mb-4"><i class="fa fa-shield-alt" aria-hidden="true"></i></div>
                         <h4 class="mb-3">Child Protection and Advocacy</h4>
 
-                        <p class="mb-4">
-                            GLO is committed to building a society where children are safe, valued, and protected from all forms of abuse, 
-                            neglect, and exploitation. This objective focuses on strengthening community-based child protection structures, 
-                            training guardians and community volunteers on safeguarding practices, and establishing referral systems for 
-                            children at risk. Through advocacy and awareness campaigns, GLO will work closely with government and stakeholders 
-                            to influence child-friendly policies and laws that uphold children’s rights. By 2030, the organization envisions 
-                            vibrant, protective communities that uphold the dignity of children and safeguard their best interests.
-                        </p>
+                        <p class="mb-4">GLO is committed to building a society where children are safe, valued, and protected from abuse and exploitation.</p>
 
-                        <!--<a class="btn btn-outline-primary px-3" href="">
-                            Learn More
+                        <div class="collapse service-more" id="service-more-3">
+                            <p>
+                                This objective focuses on strengthening community-based child protection structures, training guardians and community
+                                volunteers on safeguarding practices, and establishing referral systems for children at risk. Through advocacy and
+                                awareness campaigns, GLO will work closely with government and stakeholders to influence child-friendly policies and laws
+                                that uphold children’s rights. By 2030, the organization envisions vibrant, protective communities that uphold the dignity
+                                of children and safeguard their best interests.
+                            </p>
+                        </div>
+
+                        <a class="btn btn-outline-primary px-3 mt-2" data-bs-toggle="collapse" href="#service-more-3" role="button" aria-expanded="false" aria-controls="#service-more-3">
+                            Read More
                             <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
                                 <i class="fa fa-arrow-right"></i>
                             </div>
-                        </a>-->
+                        </a>
                     </div>
                 </div>
 
 
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-                        <img class="img-fluid mb-4" src="img/livehood.png" alt="">
+                        <div class="service-icon mb-4"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
                         <h4 class="mb-3">Livelihoods and Economic Empowerment</h4>
 
-                        <p class="mb-4">
-                            The well-being of orphans and vulnerable children is directly linked to the socio-economic stability 
-                            of their households. GLO will support guardians, caregivers, and youth through income-generating projects, 
-                            vocational training, and financial literacy programs to reduce dependency and improve household resilience. 
-                            Initiatives such as small-scale farming, poultry projects, tailoring, 
-                            and Village Savings and Loan Associations (VSLAs) will be introduced and scaled. 
-                            Youth will also receive entrepreneurship training to build sustainable businesses. 
-                            By 2029, GLO expects to have empowered over 1,000 households with economic independence, 
-                            enabling them to provide consistent care and support to children.
-                        </p>
+                        <p class="mb-4">The well-being of orphans and vulnerable children is linked to the socio-economic stability of their households.</p>
 
-                        <!--<a class="btn btn-outline-primary px-3" href="">
-                            Learn More
+                        <div class="collapse service-more" id="service-more-4">
+                            <p>
+                                GLO will support guardians, caregivers, and youth through income-generating projects, vocational training, and financial
+                                literacy programs to reduce dependency and improve household resilience. Initiatives such as small-scale farming, poultry
+                                projects, tailoring, and Village Savings and Loan Associations (VSLAs) will be introduced and scaled. Youth will also
+                                receive entrepreneurship training to build sustainable businesses. By 2029, GLO expects to have empowered over 1,000
+                                households with economic independence, enabling them to provide consistent care and support to children.
+                            </p>
+                        </div>
+
+                        <a class="btn btn-outline-primary px-3 mt-2" data-bs-toggle="collapse" href="#service-more-4" role="button" aria-expanded="false" aria-controls="service-more-4">
+                            Read More
                             <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
                                 <i class="fa fa-arrow-right"></i>
                             </div>
-                        </a>-->
+                        </a>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-                        <img class="img-fluid mb-4" src="img/partners.jpg" alt="">
+                        <div class="service-icon mb-4"><i class="fa fa-users" aria-hidden="true"></i></div>
                         <h4 class="mb-3">Institutional Strengthening and Partnerships</h4>
 
-                        <p class="mb-4">
-                            To effectively deliver on its mandate, GLO will invest in strengthening its internal systems, governance, 
-                            and human resource capacity. This includes building robust financial management systems, 
-                            monitoring and evaluation frameworks, and transparent reporting mechanisms to meet national 
-                            and international accountability standards. Partnerships will be central to GLO’s work, 
-                            involving close collaboration with government ministries, civil society organizations, donors, 
-                            the private sector, and international partners. Through these collaborations, GLO will mobilize resources, 
-                            share best practices, and scale successful interventions. By 2029, the organization envisions itself as a strong, 
-                            sustainable, and credible institution that continues to serve orphaned and vulnerable children with excellence. 
-                        </p>
+                        <p class="mb-4">To effectively deliver on its mandate, GLO will invest in strengthening internal systems, governance, and partnerships.</p>
 
-                        <!--<a class="btn btn-outline-primary px-3" href="">
-                            Learn More
+                        <div class="collapse service-more" id="service-more-5">
+                            <p>
+                                This includes building robust financial management systems, monitoring and evaluation frameworks, and transparent
+                                reporting mechanisms to meet national and international accountability standards. Partnerships will be central to GLO’s
+                                work, involving close collaboration with government ministries, civil society organizations, donors, the private sector,
+                                and international partners. Through these collaborations, GLO will mobilize resources, share best practices, and scale
+                                successful interventions. By 2029, the organization envisions itself as a strong, sustainable, and credible institution
+                                that continues to serve orphaned and vulnerable children with excellence.
+                            </p>
+                        </div>
+
+                        <a class="btn btn-outline-primary px-3 mt-2" data-bs-toggle="collapse" href="#service-more-5" role="button" aria-expanded="false" aria-controls="service-more-5">
+                            Read More
                             <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
                                 <i class="fa fa-arrow-right"></i>
                             </div>
-                        </a>-->
+                        </a>
                     </div>
                 </div>
 
@@ -255,6 +256,7 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6">
+                    <img src="img/logo.jpg" alt="GLO logo" class="footer-logo mb-3">
                     <h1 class="fw-bold text-primary mb-4">GLO<span class="text-white"> Contact</span></h1>
                     <p>Contact us via social medias or directly to email or phone number</p>
                     <div class="d-flex pt-2">
@@ -292,7 +294,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a href="index.html">2025 GLO</a> - All Right Reserved.
+                        &copy; 2026 Grace of Light for Orphans. All rights reserved.
                     </div>
                      <!--<div class="col-md-6 text-center text-md-end">
                        /*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/

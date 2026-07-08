@@ -48,6 +48,27 @@
     });
 
 
+    // Impact counters (animate up to data-target when scrolled into view, once)
+    $('.counter').each(function () {
+        $(this).waypoint(function () {
+            var $el = $(this.element);
+            if ($el.data('counted')) return;
+            $el.data('counted', true);
+            var target = parseInt($el.attr('data-target'), 10) || 0;
+            $({ count: 0 }).animate({ count: target }, {
+                duration: 2000,
+                easing: 'swing',
+                step: function () {
+                    $el.text(Math.floor(this.count).toLocaleString());
+                },
+                complete: function () {
+                    $el.text(target.toLocaleString());
+                }
+            });
+        }, { offset: '90%' });
+    });
+
+
     // Causes progress
     $('.causes-progress').waypoint(function () {
         $('.progress .progress-bar').each(function () {

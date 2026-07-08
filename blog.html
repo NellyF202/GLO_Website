@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <title>GLO - Donate</title>
+    <title>GLO - Blog &amp; Updates</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="GLO, Donate, Orphans, Refugees, Dzaleka, Malawi" name="keywords">
-    <meta content="Support Grace of Light for Orphans - donate via bank transfer or mobile money" name="description">
+    <meta content="GLO, Blog, News, Updates, Facebook, LinkedIn, Malawi" name="keywords">
+    <meta content="Latest news and stories from Grace of Light for Orphans - straight from our Facebook and LinkedIn pages" name="description">
 
     <!-- Favicon -->
     <link href="img/logo.jpg" rel="icon">
@@ -37,6 +37,11 @@
         <div class="spinner-grow text-primary" role="status"></div>
     </div>
     <!-- Spinner End -->
+
+    <!-- Facebook SDK (required for the live Page feed below) -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"></script>
 
 
     <!-- Navbar Start -->
@@ -69,7 +74,7 @@
                     <a href="about.html" class="nav-item nav-link">About</a>
                     <a href="service.html" class="nav-item nav-link">Services</a>
                     <a href="team.html" class="nav-item nav-link">Our Team</a>
-                    <a href="blog.html" class="nav-item nav-link">Blog</a>
+                    <a href="blog.html" class="nav-item nav-link active">Blog</a>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
                 <div class="d-none d-lg-flex ms-3">
@@ -89,11 +94,11 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center">
-            <h1 class="display-4 text-white animated slideInDown mb-4">Donate</h1>
+            <h1 class="display-4 text-white animated slideInDown mb-4">Blog &amp; Updates</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
-                    <li class="breadcrumb-item text-primary active" aria-current="page">Donate</li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Blog</li>
                 </ol>
             </nav>
         </div>
@@ -101,157 +106,135 @@
     <!-- Page Header End -->
 
 
-    <!-- Intro Start -->
-    <div class="container-xxl py-5">
+    <!-- Intro removed per request -->
+
+
+    <!-- Live Feeds section commented out per request
+    <div class="container-xxl pb-5">
         <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Be Their Light</div>
-                    <h1 class="display-6 mb-4">Your Generosity Restores Hope</h1>
-                    <p class="mb-4">
-                        Grace of Light for Orphans (GLO) is a registered non-profit in Dowa District, Malawi, caring for
-                        orphaned, street, and vulnerable children. We have no large corporate backers &mdash; we rely on
-                        kind people like you. Every contribution, big or small, goes directly into food, education,
-                        healthcare and protection for children who have nowhere else to turn.
-                    </p>
-                    <div class="d-flex align-items-center bg-light rounded p-3">
-                        <div class="d-inline-flex btn-lg-square bg-primary text-white rounded-circle me-3 flex-shrink-0">
-                            <i class="fa fa-shield-alt"></i>
+            <div class="row g-5">
+
+                (Facebook and LinkedIn live feed headers and embeds are commented out.)
+
+            </div>
+        </div>
+    </div>
+    -->
+
+
+    <!-- Featured Stories Start -->
+    <div id="featured-stories" class="container-xxl bg-light py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Featured Stories</div>
+                <h1 class="display-6 mb-3">Highlights From Our Community</h1>
+                <!-- descriptor removed per request -->
+            </div>
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="img/course_one.jpg" alt="Education program">
+                            <span class="blog-source fb"><i class="fab fa-facebook-f"></i> Facebook</span>
                         </div>
-                        <p class="mb-0"><strong>100% transparent.</strong> Funds are received by GLO directly. Request a receipt and impact update any time at graceoflightfororphans@gmail.com.</p>
+                        <div class="blog-body">
+                            <span class="blog-date"><i class="far fa-calendar-alt me-1"></i>Jul 01, 2026</span>
+                            <h5 class="my-2">Back to School with GLO</h5>
+                            <p class="text-body mb-3">Another group of children received uniforms, books and supplies as they head back to the classroom this term.</p>
+                            <a class="text-primary fw-medium" target="_blank" href="https://www.facebook.com/GraceofLightforOrphans">Read on Facebook <i class="fa fa-arrow-right ms-1 small"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="position-relative overflow-hidden rounded h-100" style="min-height: 380px;">
-                        <img class="position-absolute w-100 h-100" src="img/about_one.jpg" alt="GLO children" style="object-fit: cover;">
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="img/livehood.jpg" alt="Economic empowerment">
+                            <span class="blog-source li"><i class="fab fa-linkedin-in"></i> LinkedIn</span>
+                        </div>
+                        <div class="blog-body">
+                            <span class="blog-date"><i class="far fa-calendar-alt me-1"></i>Jun 28, 2026</span>
+                            <h5 class="my-2">Empowering Guardians</h5>
+                            <p class="text-body mb-3">Our livelihood program is helping caregivers build small businesses and support their families with dignity.</p>
+                            <a class="text-primary fw-medium" target="_blank" href="https://www.linkedin.com/company/grace-of-light-for-orphan/">Read on LinkedIn <i class="fa fa-arrow-right ms-1 small"></i></a>
+                        </div>
                     </div>
                 </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="img/about_one.jpg" alt="Child protection">
+                            <span class="blog-source fb"><i class="fab fa-facebook-f"></i> Facebook</span>
+                        </div>
+                        <div class="blog-body">
+                            <span class="blog-date"><i class="far fa-calendar-alt me-1"></i>Jun 20, 2026</span>
+                            <h5 class="my-2">Keeping Children Safe</h5>
+                            <p class="text-body mb-3">Community volunteers completed safeguarding training to better protect children at risk in their villages.</p>
+                            <a class="text-primary fw-medium" target="_blank" href="https://www.facebook.com/GraceofLightforOrphans">Read on Facebook <i class="fa fa-arrow-right ms-1 small"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="img/courses-1.jpg" alt="Community event">
+                            <span class="blog-source fb"><i class="fab fa-facebook-f"></i> Facebook</span>
+                        </div>
+                        <div class="blog-body">
+                            <span class="blog-date"><i class="far fa-calendar-alt me-1"></i>Jun 10, 2026</span>
+                            <h5 class="my-2">Community Health Day — Vaccinations & Nutrition Support</h5>
+                            <p class="text-body mb-3">GLO hosted a community health day delivering vaccinations and nutrition support to families in Dowa, improving access to essential care.</p>
+                            <a class="text-primary fw-medium" target="_blank" href="https://www.facebook.com/GraceofLightforOrphans">Read on Facebook <i class="fa fa-arrow-right ms-1 small"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="img/courses-2.jpg" alt="Volunteer training">
+                            <span class="blog-source fb"><i class="fab fa-facebook-f"></i> Facebook</span>
+                        </div>
+                        <div class="blog-body">
+                            <span class="blog-date"><i class="far fa-calendar-alt me-1"></i>May 15, 2026</span>
+                            <h5 class="my-2">Volunteers Trained in Child Safeguarding</h5>
+                            <p class="text-body mb-3">A new cohort of community volunteers completed training in child safeguarding and community mobilization, strengthening local protection efforts.</p>
+                            <a class="text-primary fw-medium" target="_blank" href="https://www.facebook.com/GraceofLightforOrphans">Read on Facebook <i class="fa fa-arrow-right ms-1 small"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.1s">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="img/course_three.jpg" alt="Scholarship winners">
+                            <span class="blog-source fb"><i class="fab fa-facebook-f"></i> Facebook</span>
+                        </div>
+                        <div class="blog-body">
+                            <span class="blog-date"><i class="far fa-calendar-alt me-1"></i>Apr 22, 2026</span>
+                            <h5 class="my-2">Scholarship Winners Announced</h5>
+                            <p class="text-body mb-3">We celebrated the announcement of scholarship recipients who will attend school this term.</p>
+                            <a class="text-primary fw-medium" target="_blank" href="https://www.facebook.com/GraceofLightforOrphans">Read on Facebook <i class="fa fa-arrow-right ms-1 small"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-5">
+                <a class="btn btn-primary py-3 px-5 me-2 mb-2" target="_blank" href="https://www.facebook.com/GraceofLightforOrphans">
+                    <i class="fab fa-facebook-f me-2"></i>Follow on Facebook
+                </a>
+                <a class="btn btn-outline-primary py-3 px-5 mb-2" target="_blank" href="https://www.linkedin.com/company/grace-of-light-for-orphan/">
+                    <i class="fab fa-linkedin-in me-2"></i>Follow on LinkedIn
+                </a>
             </div>
         </div>
     </div>
-    <!-- Intro End -->
-
-
-    <!-- Suggested Amounts Start -->
-    <div class="container-xxl bg-light py-5">
-        <div class="container py-5">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Choose Your Impact</div>
-                <h1 class="display-6 mb-3">What Your Donation Can Do</h1>
-                <p class="mb-0">Pick an amount that feels right for you, then send it using one of the methods below. Recurring monthly gifts help us most by making support predictable for the children.</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="amount-tier bg-white">
-                        <div class="tier-amount mb-2">MK 5,000</div>
-                        <p class="text-body mb-0"><i class="fa fa-utensils text-primary me-2"></i>Nutritious meals for one child for a week</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="amount-tier bg-white">
-                        <div class="tier-amount mb-2">MK 25,000</div>
-                        <p class="text-body mb-0"><i class="fa fa-book text-primary me-2"></i>A month of schooling &amp; supplies</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="amount-tier bg-white">
-                        <div class="tier-amount mb-2">MK 60,000</div>
-                        <p class="text-body mb-0"><i class="fa fa-briefcase-medical text-primary me-2"></i>Healthcare &amp; essentials for a family</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="amount-tier bg-white">
-                        <div class="tier-amount mb-2">Any Amount</div>
-                        <p class="text-body mb-0"><i class="fa fa-heart text-primary me-2"></i>Every kwacha and dollar makes a difference</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Suggested Amounts End -->
-
-
-    <!-- Donation Methods Start -->
-    <div class="container-xxl py-5">
-        <div class="container py-5">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">How To Give</div>
-                <h1 class="display-6 mb-3">Donate Securely Online</h1>
-                <p class="mb-0">Give in just a few taps through our secure donation portal. Pay with <strong>Airtel Money</strong>, <strong>TNM Mpamba</strong>, or <strong>Card</strong> &mdash; from anywhere in the world.</p>
-            </div>
-
-            <!-- Supported payment methods -->
-            <div class="row g-3 justify-content-center mb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 720px; margin-left:auto; margin-right:auto;">
-                <div class="col-4">
-                    <div class="pay-method">
-                        <i class="fa fa-mobile-alt text-primary"></i>
-                        <span>Airtel Money</span>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="pay-method">
-                        <i class="fa fa-wallet text-primary"></i>
-                        <span>TNM Mpamba</span>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="pay-method">
-                        <i class="fa fa-credit-card text-primary"></i>
-                        <span>Card</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Embedded donation portal -->
-            <div class="row justify-content-center">
-                <div class="col-lg-10 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="donation-embed">
-                        <iframe src="https://pay.dzaleka.com/campaigns/be-their-light-31629a"
-                            title="Be Their Light - GLO Donation Campaign"
-                            loading="lazy"
-                            allow="payment"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <p class="text-center text-body mt-3 mb-0">
-                        <i class="fa fa-lock text-primary me-2"></i><small>Secure payment processed by pay.dzaleka.com &mdash; we never see or store your card details.
-                        Donation form not loading? <a href="https://pay.dzaleka.com/campaigns/be-their-light-31629a" target="_blank" rel="noopener" class="text-primary fw-medium">Open it in a new tab</a>.</small>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Donation Methods End -->
-
-
-    <!-- Other Ways Start -->
-    <div class="container-xxl bg-light py-5">
-        <div class="container py-5">
-            <div class="row g-4">
-                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="text-center p-4">
-                        <div class="d-inline-flex btn-lg-square bg-primary text-white rounded-circle mb-3"><i class="fa fa-box-open"></i></div>
-                        <h5>In-Kind Donations</h5>
-                        <p class="text-body mb-0">Clothes, books, school supplies and food are always welcome. Contact us to arrange a drop-off.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="text-center p-4">
-                        <div class="d-inline-flex btn-lg-square bg-primary text-white rounded-circle mb-3"><i class="fa fa-hands-helping"></i></div>
-                        <h5>Volunteer Your Time</h5>
-                        <p class="text-body mb-0">Teachers, mentors and healthcare professionals can make a lasting impact on the ground.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="text-center p-4">
-                        <div class="d-inline-flex btn-lg-square bg-primary text-white rounded-circle mb-3"><i class="fa fa-handshake"></i></div>
-                        <h5>Partner With Us</h5>
-                        <p class="text-body mb-0">Organisations and businesses can sponsor programs or fund specific causes. Let's talk.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Other Ways End -->
+    <!-- Featured Stories End -->
 
 
     <!-- Footer Start -->
